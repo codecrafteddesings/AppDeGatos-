@@ -1,0 +1,113 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+  <title>AppDeGatos</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h2>AppDeGatos</h2>
+     <!--TODO: Agregar enlace a imagenes de gatos-->
+     <nav>
+         <ul><li><a href="#">Inicio</a></li>
+          <li><a href="mailto:wilmerdls02@gmail.com">Correo</a></li>
+          <li><a href="https://wa.me/8099976928">WhatsApp</a></li>
+          <li><a href="contacto.8099976928">Contacto</a></li>
+          
+         </ul>
+     </nav>
+
+
+  </header>
+  
+  <main>
+    <h3>Imagenes de gatos</h3>
+    <p>Haz click aqui para ver mas <a href="https://www.free-css.com/free-css-templates" target="_blank"
+        rel="noopener noopener">imagenes de gatos.</a></p>
+    <br>
+    <a href="https://www.free-css.com/free-css-templates" target="_blank" rel="noopener noopener"> <img
+        src="https://bit.ly/fcc-relaxing-cat">
+      <alt="Un lindo gato recostado sobre su espalda">
+    </a>
+    <br>
+    <hr>
+    <h3>Listas de gatos<h3><br>
+
+        <div>
+          <p>Cosas que los gatos <em>aman</em>:</p>
+          <ul>
+            <li>Menta gatura</li>
+            <li>Apuntadores Laser</li>
+            <li><s>lasaña</s></li>
+          </ul>
+          <img src="img/imagen.jpeg" alt="lasaña">
+          <p>Cosas que los gatos <strong>odian</strong>:</p>
+          <ol>
+            <li>Tratamientos antipulgas</li>
+            <li>Truenos</li>
+            <li>Otros gatos</li>
+          </ol>
+          <img src="img/image2.jpeg" alt="gatos">
+        </div>
+      
+        
+          <!-- Tu contenido de formulario aquí -->
+
+        <form action="/enviar-respuesta" id="miFormulario">
+          <label for="Interior"><input id="Interior" type="radio" value="Interior" name="Interior-Exterior">
+            Interior</label>
+          <br>
+          <label for="Exterior"><input id="Exterior" type="radio" value="Exterior" name="Interior-Exterior">
+            Exterior</label>
+          <br>
+
+          <!--Casillas de verificacion-->
+          <label for="Cariñoso"><input id="Carinoso" type="checkbox" value="Carinoso" name="personalidad" checked>
+            Carinoso</label>
+          <br>
+          <label for="Perezoso"> <input id="Perezoso" type="checkbox" value="Perezoso" name="personalidad" checked>
+            Perezoso</label>
+          <br>
+          <label for="Energico"><input id="Energico" type="checkbox" value="Energico" name="personalidad" checked>
+            Energico</label>
+
+          <!--Texto y Boton Enviar-->
+          <input type="text" placeholder="URL de la foto de tu gato" required>
+          <br>
+          <button type="submit">Enviar</button>
+          <br>
+        </form>
+
+  </main>
+
+  <footer>
+    <p> <small>Derechos reservados - <a href="https://somee.com/doka/DOU" target="_blank" rel="noopener noopener" a>
+          WilmerdelosSantos.somee.com</a> </small> </p>
+  </footer>
+
+  <script>
+    // Obtén el formulario por su ID
+    var formulario = document.getElementById("miFormulario");
+  
+    // Agrega un controlador de eventos para el evento "submit"
+    formulario.addEventListener("submit", function (event) {
+      // Previene que el formulario se envíe automáticamente
+      event.preventDefault();
+  
+      // Obtén el valor del campo de texto (URL de la foto de tu gato)
+      var urlFotoGato = formulario.querySelector("input[type='text']").value;
+  
+      // Realiza alguna acción, como mostrar un mensaje
+      alert("Formulario enviado con URL de foto: " + urlFotoGato);
+  
+      // Puedes enviar el formulario aquí si es necesario
+      // formulario.submit();
+    });
+  </script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/*Estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ /* Estilos responsivos */
+ @media screen and (max-width: 768px) {
+  /* Modifica el tamaño del encabezado y el texto principal */
+  header {
+    font-size: 24px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  /* Elimina el subrayado predeterminado */
+  color: #fff;
+}
+
+/* Cambia el color al pasar el mouse sobre el enlace */
+a:hover {
+  color: #ff5500;
+}
+
+/*Estilo para el párrafo dentro del <div>:*/
+div p {
+  /* Estilos para el párrafo */
+  font-size: 18px;
+  color: green;
+}
+
+/*Estilo para la lista no ordenada (<ul>) dentro del <div>:*/
+div ul {
+  /* Estilos para la lista no ordenada */
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+img {
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  /* Para eliminar el espacio en blanco debajo de las imágenes */
+  margin: 10px auto;
+  /* Centrar las imágenes horizontalmente */
+}
+
+/*Estilo para los elementos de la lista dentro de la lista no ordenada (<ul>) dentro del <div>:*/
+div ul li {
+  /* Estilos para los elementos de la lista */
+  font-size: 16px;
+  color: #666;
+}
+
+/*Estilo para los elementos de la lista ordenada (<ol>) dentro del <div>:*/
+div ol {
+  /* Estilos para la lista ordenada */
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/*Estilo para los elementos de la lista ordenada (<ol>) dentro del <div>:*/
+div ol li {
+  /* Estilos para los elementos de la lista */
+  font-size: 16px;
+  color: #666;
+}
+
+/*Estilo para los elementos de la lista dentro de la lista ordenada (<ol>) dentro del <div>:*/
+div p em {
+  /* Estilos para el texto enfatizado (<em>) dentro de párrafos */
+  font-style: italic;
+}
+
+/*Estilo para las etiquetas <em> y <strong> dentro de los párrafos:*/
+div p strong {
+  /* Estilos para el texto en negrita (<strong>) dentro de párrafos */
+  font-weight: bold;
+}
+
+/*Estilo para las imágenes dentro del <div>:*/
+div img {
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  /* Para eliminar el espacio en blanco debajo de las imágenes */
+  margin: 10px auto;
+  /* Centrar las imágenes horizontalmente */
+}
+
+/* Estilos para las imágenes 
+max-width: 100%;*/
+
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
